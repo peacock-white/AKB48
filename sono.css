@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+button {
+  background-color: yellow;
+  font-size: large;
+  position: fixed;
+  right: 32px;
+  bottom: 96px;
+}
+
+.container {
+  display: grid;
+  
+  grid-template-columns: repeat(2, 100px);
+  /* grid-template-rows: repeat(2, 100px); */
+  /* grid-auto-flow: column; */
+  grid-auto-columns: 100px;
+  grid-auto-rows: 100px;
+  background: #eee;
+}
+
+
+
+.item-1 {
+  background: #d66a6a;
+}
+
+.item-2 {
+  background: #e6a97e;
+}
+
+.item-3 {
+  background: #f2d479;
+}
+
+.item-4 {
+  background: #a7c97f;
+}
+
+.item-5 {
+  background: #7bb38e;
+}
+
+.item-6 {
+  background: #6dbec9;
+}
+
+

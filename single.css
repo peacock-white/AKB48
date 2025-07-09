@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* 一般設定 */
+h2 {
+color: blueviolet;
+}
+
+dt {
+  font-weight: bold;
+  color: brown;
+}
+
+
+
+
+/* headerの設定 */
+header {
+  background-color: aqua;
+}
+
+
+
+/* ナビの設定 */
+nav {
+  background-color: lemonchiffon;
+  width: 300px;
+}
+
+nav > ol > p {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+
+/* Main　の設定 */
+main {
+  margin-left: 10PX;
+  background-color: aquamarine;
+  flex: 1;
+}
+
+/* bodyの設定 */
+body {
+  background-color: lightcyan;
+}
+
+
+/* footerの設定 */
+
+footer {
+  background-color: lightgrey;
+  text-align: center;
+  color: blueviolet;
+}
+
+
+button {
+  background-color: yellow;
+  font-size: large;
+  position: fixed;
+  right: 32px;
+  bottom: 96px;
+}
+
+
+
+/* メディアクリエイターの設定 */
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+  }
+}
+

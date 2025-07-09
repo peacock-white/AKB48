@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/* 一般設定 */
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  order: -1;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+header,
+main,
+nav,
+footer {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+
+
+
+/* headerの設定 */
+header {
+  background-color: aqua;
+  display: block;
+  justify-content: space-between;
+}
+
+header>nav {
+  background-color: orange;
+}
+
+.pc-menu {
+  display: none;
+  width: 600px;
+}
+
+.common-menu {
+  background-color: yellowgreen;
+}
+
+header>nav>div {
+  width: 300px;
+}
+
+
+/* ナビの設定 */
+
+nav {
+  background-color: yellow;
+  width: 250px;
+  order: -1;
+}
+
+
+
+/* bodyの設定 */
+body {
+  background-color: pink;
+}
+
+/* Main　の設定 */
+
+main {
+  background-color: lightgreen;
+  font-size: 14px;
+  flex: 1;
+}
+
+/* モーダルウィンドーの設定 */
+
+#open, #close {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  z-index: 2;
+}
+
+#modal > h3 {
+  color: orchid;
+}
+
+#modal > p {
+  margin: 0 0 20px;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(0, -500px);
+}
+
+/* ボックスの設定 */
+.box {
+  width: 150px;
+  height: 50px;
+  background-color: skyblue;
+  text-align: center;
+}
+
+
+/* footerの設定 */
+
+footer {
+  background-color: silver;
+  text-align: center;
+}
+
+/* メディアクエリ－の設定 */
+/* width =<600　の設定 */
+@media (min-width: 600px) {
+  .sp-menu {
+    display: none;
+  }
+
+  .common-menu {
+    display: block;
+    width: 600px;
+  }
+
+  .pc-menu {
+    display: block;
+    background-color: green;
+  }
+
+  .common-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    display: flex;
+  }
+}
