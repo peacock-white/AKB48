@@ -27,12 +27,14 @@ header {
 nav {
   background-color: lemonchiffon;
   width: 300px;
+  font-size: smaller;
 }
 
-nav > ol > p {
+nav > p {
   font-size: 20px;
   color: red;
   font-weight: bold;
+  text-align: center;
 }
 
 
