@@ -12,7 +12,7 @@
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-      // type: 'fraction',
+      type: 'fraction',
     },
     scrollbar: {
       el: '.swiper-scrollbar',
