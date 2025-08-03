@@ -8,10 +8,10 @@
     centeredSlides: true,
     grabCursor: true,
     autoplay: {
-      delay: 1000,
+      delay: 0,
     },
     // effect: 'fade',
-    speed: 1000,
+    speed: 2000,
     navigation: {
       prevEl: '.my-button-prev',
       nextEl: '.my-button-next',
