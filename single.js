@@ -34,8 +34,9 @@
     grabCursor: true,
     autoplay: {
       delay: 0,
+      reverseDirection: true,
     },
-    speed: 3000,
+    speed: 2000,
    
     // pagination: {
     //   el: '.swiper-pagination',
