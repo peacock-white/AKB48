@@ -40,11 +40,22 @@ header > nav {
 .pc-menu {
   display: none;
   width: 600px;
+  margin: 12px auto 0;
 }
+
+.sp-menu {
+  margin: 12px auto 0;
+}
+
 
 .common-menu {
   background-color: yellowgreen;
+  margin: 0 auto;
 }
+
+
+
+
 
 header > nav > div {
   width: 300px;
