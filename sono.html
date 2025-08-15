@@ -4,29 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>レイアウトの練習</title>
+  <title>その他</title>
   <link rel="stylesheet" href="sono.css">
 </head>
 
 <body>
-<div>
-  <div class="container">
-    <div class="item-1">1</div>
-    <div class="item-2">2</div>
-    <div class="item-3">3</div>
-    <div class="item-4">4</div>
-    <div class="item-5">5</div>
-    <div class="item-6">6</div>
+  <header>
+    <h1>My Site</h1>
+    <h4>現在時刻は<span id="real-time"></span>です</h4>
+    <script type="text/javascript">
+      function Time() {
+        var realTime = new Date();
+        var hour = realTime.getHours();
+        var minutes = realTime.getMinutes();
+        var seconda = realTime.getSeconds();
+        var text = hour + ":" + minutes + ":" + seconda;
+        document.getElementById("real-time").innerHTML = text;
+      }
 
-  </div>
-</div>
+      setInterval('Time()', 1000);
+
+    </script>
+
+  </header>
+  <nav>nav</nav>
+  <main>Main
+    <div class="container">
+      <ul>
+        <li>item 1</li>
+        <li>item 2 item 2 item 2 item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
+      <ul>
+        <li>item 1</li>
+        <li>item 2 item 2 item 2 item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
+    </div>
+
+    <br>
+
+
+
+
+
+  </main>
+  <footer>
+    <small>秋田県潟上市　柱の会</small>
+  </footer>
+
 
 
   <div>
     <button><a href="index.html#mokuji">目次</a></button>
   </div>
 
-
+  <script src="sono.js"></script>
 </body>
 
 </html>

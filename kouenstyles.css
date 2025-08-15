@@ -7,6 +7,7 @@ body {
 header {
   display: flex;
   padding: 0 16px;
+  background-color: aqua;
 }
 
 

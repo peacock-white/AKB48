@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+
+body {
+  display: grid;
+  grid-template:
+    "header header"
+    "nav main" 1fr "footer footer"
+    / 200px 1fr;
+
+  @media (width <=600px) {
+    grid-template:
+      "header"
+      "nav"
+      "main" 1fr
+      "footer";
+  }
+}
+
+
+
+body,
+h1 {
+  margin: 0;
+}
+
+header h1 {
+  text-align: center;
+
+}
+
+main h1 {
+  font-size: 18px;
+  border-bottom: 1px solid;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+
+
+
+header {
+  background: pink;
+  grid-area: header;
+}
+
+nav {
+  background: yellow;
+  grid-area: nav;
+}
+
+
+main {
+  background: skyblue;
+  grid-area: main
+}
+
+
+footer {
+  background: silver;
+  grid-area: footer;
+  text-align: center;
+}
+
+
+
+button {
+  background-color: yellow;
+  font-size: large;
+  position: fixed;
+  right: 32px;
+  bottom: 96px;
+}
+
+dl > div {
+  margin-bottom: 8px;
+}
+
+dt {
+  padding: 8px;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+
+dt::before {
+  content: 'Q. ';
+}
+
+dt::after {
+  content: '+';
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  transition: transform .3s;
+}
+
+dl > div.appear dt::after {
+ transform: rotate(45deg);
+}
+
+
+
+
+
+dd {
+  padding: 8px;
+  margin: 0;
+  display: none;
+}
+
+dd::before {
+  content: 'A. '; 
+}
+
+
+dl > div.appear dd {
+  display: block;
+  animation: .3s fadeIn;
+}
+
+/* アニメーション */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
