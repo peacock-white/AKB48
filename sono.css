@@ -31,6 +31,14 @@ h1 {
   margin: 0;
 }
 
+
+h1 {
+  margin: 24px 24px;
+  text-align: center;
+}
+
+
+
 header {
   background: orange;
   grid-area: header;
@@ -65,19 +73,40 @@ ul {
 }
 
 
-
-
-
-
-
-
-button {
+.button1 {
   background-color: yellow;
+  border-radius: 8px;
   font-size: large;
   position: fixed;
   right: 32px;
   bottom: 96px;
+  box-shadow: 0 4px #7a0000;
 }
+
+.button2 {
+  background-color: lightblue;
+  border-radius: 8px;
+  font-size: large;
+  position: fixed;
+  right: 95px;
+  bottom: 96px;
+  box-shadow: 0 4px #7a0000;
+}
+
+button:hover {
+ opacity: .8;
+}
+
+button:active {
+  box-shadow: 0 1px #7a0000;
+  transform: translateY(3px);
+}
+
+
+
+
+
+
 
 h4 {
   font-size: 14px;
@@ -86,4 +115,50 @@ h4 {
   right: 25px;
   top: 10px;
 }
+
+#omi {
+  width: 240px;
+  margin: 32px auto;
+  border: 4px double red;
+  text-align: center;
+  color: red;
+}
+
+
+#omi h2 {
+  margin: 0;
+  border-bottom: 2px solid red;
+  font-weight: normal;
+  padding: 8px 0;
+}
+
+#omi p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  padding: 24px 0;
+}
+
+#button1 {
+  width: 240px;
+  background: red;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 0;
+  cursor: pointer;
+  margin-top: -24px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px #7a0000;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+
+button:active {
+  box-shadow: 0 1px #7a0000;
+  transform: translateY(3px);
+}
+
 
