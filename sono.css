@@ -31,10 +31,24 @@ h1 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+button {
+  all: unset;
+}
+
 
 h1 {
   margin: 24px 24px;
   text-align: center;
+}
+
+header p {
+  text-align: center;
+  color: purple;
+  font-weight: bold;
 }
 
 
@@ -75,26 +89,30 @@ ul {
 
 .button1 {
   background-color: yellow;
+  border: solid black 2px;
   border-radius: 8px;
   font-size: large;
   position: fixed;
   right: 32px;
   bottom: 96px;
   box-shadow: 0 4px #7a0000;
+  padding: 2px;
 }
 
 .button2 {
   background-color: lightblue;
+  border: solid black 2px;
   border-radius: 8px;
   font-size: large;
   position: fixed;
   right: 95px;
   bottom: 96px;
   box-shadow: 0 4px #7a0000;
+  padding: 2px;
 }
 
 button:hover {
- opacity: .8;
+  opacity: .8;
 }
 
 button:active {
@@ -116,12 +134,16 @@ h4 {
   top: 10px;
 }
 
+
+/* おみくじの設定 */
+
 #omi {
   width: 240px;
-  margin: 32px auto;
+  margin: 32px auto 12px;
   border: 4px double red;
   text-align: center;
   color: red;
+  background-color: #fff;
 }
 
 
@@ -139,7 +161,7 @@ h4 {
   padding: 24px 0;
 }
 
-#button1 {
+#btn {
   width: 240px;
   background: red;
   border-radius: 8px;
@@ -152,13 +174,71 @@ h4 {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: .6;
 }
 
 
 button:active {
   box-shadow: 0 1px #7a0000;
   transform: translateY(3px);
+  opacity: .4;
 }
 
 
+/* パスワードジェネレーターの設定 */
+
+
+#pass {
+  width: 380px;
+  margin: 24px auto 64px;
+  box-shadow: 0 0 8px #999;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: aliceblue;
+}
+
+
+#pass p {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-family: "Courier New";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 0;
+  background-color: rgb(222, 222, 21);
+}
+
+#btn2 {
+  width: 100%;
+  background-color: #08c;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#fld {
+  border: 3px dashed #aaa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#leg {
+  padding: 0 8px;
+  color: blue;
+}
+
+
+#password-length {
+  width: 24px;
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
