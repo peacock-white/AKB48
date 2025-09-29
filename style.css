@@ -8,6 +8,10 @@ h1 {
   order: -1;
 }
 
+li {
+  margin-top: 10px;
+}
+
 
 
 body {
@@ -38,11 +42,12 @@ header > nav {
 
 .pc-menu {
   display: none;
-  width: 600px;
+  width: 100px;
   margin: 12px auto 0;
 }
 
 .sp-menu {
+  width: 100px;
   margin: 12px auto 0;
 }
 
@@ -65,8 +70,18 @@ header > nav > div {
 
 nav {
   background-color: yellow;
-  width: 250px;
+  width: 280px;
   order: -1;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: 0 0 20px rgba(0 0 0 / 0.8);
+  }
+}
+
+a:hover {
+  background: lightcyan;
+  font-size: large;
+  font-weight: bold;
 }
 
 
@@ -110,6 +125,7 @@ footer {
 
   .pc-menu {
     display: block;
+    width: 100px;
     background-color: green;
   }
 
