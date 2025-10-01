@@ -205,3 +205,44 @@ button:active {
 .my-carousel .swiper-pagination {
   bottom: -24px;
 }
+
+/* 消えていく「柱の会」制作 */
+
+.message {
+  width: 300px;
+  background: silver;
+  color:blueviolet;
+  font-size: large;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  position: fixed;
+  right: 100px;
+  bottom: 32px;
+  animation: popup 10s forwards;
+}
+
+@keyframes popup {
+ 0% {
+  transform: translateY(10px);
+  opacity: 0;
+ }
+
+ 20% {
+  transform: none;
+  opacity: 1;
+ }
+
+ 80% {
+  transform: none;
+  opacity: 1;
+ }
+
+ 100% {
+  transform: translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+ }
+
+}
+
