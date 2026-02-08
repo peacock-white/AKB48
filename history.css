@@ -2,7 +2,7 @@
 
 /* 一般設定 */
 h2 {
-color: blueviolet;
+  color: blueviolet;
 }
 
 h3 {
@@ -37,6 +37,8 @@ dt {
 }
 
 
+
+
 /* headerの設定 */
 header {
   background-color: aqua;
@@ -47,10 +49,29 @@ header {
 /* ナビの設定 */
 nav {
   background-color: lemonchiffon;
-  width: 300px;
+  width: 150px;
+  height: 300px;
+  position: fixed;
+  border-radius: 20%;
+
+  &:hover {
+    box-shadow: 0 0 10px rgb(142, 6, 108);
+  }
 }
 
-nav > ol > p {
+
+
+#bumoku {
+  font-size: large;
+  font-weight: bold;
+  background-color: orange;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+
+
+nav>ol>p {
   font-size: 20px;
   color: red;
   font-weight: bold;
@@ -59,7 +80,7 @@ nav > ol > p {
 
 /* Main　の設定 */
 main {
-  margin-left: 10PX;
+  margin-left: 160px;
   background-color: aquamarine;
   flex: 1;
 }
@@ -74,7 +95,7 @@ body {
 .message {
   width: 300px;
   background: silver;
-  color:blueviolet;
+  color: blueviolet;
   font-size: large;
   font-weight: bold;
   padding: 8px 16px;
@@ -86,26 +107,26 @@ body {
 }
 
 @keyframes popup {
- 0% {
-  transform: translateY(10px);
-  opacity: 0;
- }
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
 
- 20% {
-  transform: none;
-  opacity: 1;
- }
+  20% {
+    transform: none;
+    opacity: 1;
+  }
 
- 80% {
-  transform: none;
-  opacity: 1;
- }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
 
- 100% {
-  transform: translateY(10px);
-  opacity: 0;
-  pointer-events: none;
- }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+  }
 
 }
 
@@ -126,7 +147,7 @@ footer {
 
 /* ボタンの設定 */
 
-button {
+#top {
   background-color: rgb(0, 225, 255);
   border-radius: 8px;
   font-size: large;
@@ -148,7 +169,7 @@ button {
 
 
 button:hover {
- opacity: .8;
+  opacity: .8;
 }
 
 button:active {
@@ -166,4 +187,3 @@ button:active {
     display: flex;
   }
 }
-
