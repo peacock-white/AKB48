@@ -49,6 +49,7 @@ header {
 /* ナビの設定 */
 nav {
   background-color: lemonchiffon;
+  font-size: small;
   width: 150px;
   height: 300px;
   position: fixed;
