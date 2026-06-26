@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+
+body {
+  display: grid;
+  grid-template:
+    "header header"
+    "nav main" 1fr "footer footer"
+    / 200px 1fr;
+
+  @media (width <=600px) {
+    grid-template:
+      "header"
+      "nav"
+      "main" 1fr
+      "footer";
+  }
+}
+
+
+
+body,
+h1 {
+  margin: 0;
+}
+
+header h1 {
+  text-align: center;
+
+}
+
+main h1 {
+  font-size: 18px;
+  border-bottom: 1px solid;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+
+
+
+header {
+  background: pink;
+  grid-area: header;
+}
+
+nav {
+  background: yellow;
+  grid-area: nav;
+}
+
+
+main {
+  background: skyblue;
+  grid-area: main
+}
+
+
+footer {
+  background: silver;
+  grid-area: footer;
+  text-align: center;
+}
+
+
+.button1 {
+  background-color: yellow;
+  border-radius: 8px;
+  font-size: large;
+  position: fixed;
+  right: 32px;
+  bottom: 96px;
+  box-shadow: 0 4px #7a0000;
+}
+
+/* ナビの設定 */
+nav {
+  background-color: lemonchiffon;
+  margin-top: 50px;
+  font-size: small;
+  width: 150px;
+  height: 300px;
+  position: fixed;
+  border-radius: 20%;
+
+  &:hover {
+    box-shadow: 0 0 10px rgb(142, 6, 108);
+  }
+}
+
+
+#bumoku {
+  font-size: large;
+  font-weight: bold;
+  background-color: orange;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+
+
+nav>ol>p {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+dt {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+
+dd {
+ border-bottom: 2px solid palevioletred;
+ color: darkslategray;
+ margin-bottom: 10px;
+}
