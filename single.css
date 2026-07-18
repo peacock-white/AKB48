@@ -19,6 +19,21 @@ dd {
   color: blue;
 }
 
+.box-1 {
+  margin-left: 50px;
+  background-color: palegoldenrod;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+section > h4 {
+  margin-left: 30px;
+  width: 220px;
+  text-align: center;
+  background-color: pink;
+  border-radius: 10px;
+}
+
 
 /* headerの設定 */
 header {
