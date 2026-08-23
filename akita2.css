@@ -219,3 +219,9 @@ article {
   background-color: bisque;
   
 }
+
+hr {
+  height: 6px;
+  width: 300px;
+  background-color: blueviolet;
+}
