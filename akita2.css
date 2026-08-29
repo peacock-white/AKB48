@@ -220,8 +220,17 @@ article {
   
 }
 
-hr {
+.sen1 {
   height: 6px;
   width: 300px;
   background-color: blueviolet;
 }
+
+.sen2 {
+  height: 3px;
+  width: 300px;
+  background-color: blue;
+}
+ 
+
+
