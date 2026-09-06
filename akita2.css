@@ -76,14 +76,17 @@ header > nav > div {
   border-radius: 20px;
   &:hover {
     box-shadow: 0 0 20px rgba(0 0 0 / 0.8);
+    background: lightgreen;
+    font-size: large;
+    font-weight: bold;
   }
 }
 
-a:hover {
+/* a:hover {
   background: lightcyan;
   font-size: large;
   font-weight: bold;
-}
+} */
 
 
 
