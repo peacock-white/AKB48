@@ -36,7 +36,7 @@ header {
   justify-content: space-between;
 }
 
-header > nav {
+header>nav {
   background-color: orange;
 }
 
@@ -61,7 +61,7 @@ header > nav {
 
 
 
-header > nav > div {
+header>nav>div {
   width: 300px;
 }
 
@@ -73,16 +73,20 @@ header > nav > div {
   width: 400px;
   order: -1;
   border-radius: 20px;
+
   &:hover {
     box-shadow: 0 0 20px rgba(0 0 0 / 0.8);
+    background: lightcyan;
+    font-size: large;
+    font-weight: bold;
   }
 }
 
-a:hover {
+/* a:hover {
   background: lightcyan;
   font-size: large;
   font-weight: bold;
-}
+} */
 
 
 
@@ -104,7 +108,7 @@ main {
 .message {
   width: 300px;
   background: silver;
-  color:blueviolet;
+  color: blueviolet;
   font-size: large;
   font-weight: bold;
   padding: 8px 16px;
@@ -116,26 +120,26 @@ main {
 }
 
 @keyframes popup {
- 0% {
-  transform: translateY(10px);
-  opacity: 0;
- }
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
 
- 20% {
-  transform: none;
-  opacity: 1;
- }
+  20% {
+    transform: none;
+    opacity: 1;
+  }
 
- 80% {
-  transform: none;
-  opacity: 1;
- }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
 
- 100% {
-  transform: translateY(10px);
-  opacity: 0;
-  pointer-events: none;
- }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+  }
 
 }
 
@@ -202,4 +206,3 @@ button:active {
   box-shadow: 0 1px #7a0000;
   transform: translateY(3px);
 }
-
