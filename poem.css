@@ -51,6 +51,21 @@ footer {
   border-radius: 10%;
 }
 
+.gray {
+  background-color: lightgray;
+  border-radius: 10%;
+}
+
+.blue {
+  background-color: lightskyblue;
+  border-radius: 10%;
+}
+
+.salmon {
+  background-color: lightsalmon;
+  border-radius: 10%;
+}
+
 
 
 
