@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/* 一般設定 */
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  order: -1;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h5 {
+  font-size: 15px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+p {
+  margin-left: 30px;
+}
+
+
+
+
+
+li {
+  margin-top: 20px;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+header,
+main,
+nav,
+footer {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.pink {
+  background-color: lightpink;
+  border-radius: 10%;
+}
+
+
+
+
+/* headerの設定 */
+header {
+  background-color: aqua;
+  display: block;
+  justify-content: space-between;
+}
+
+header>nav {
+  background-color: orange;
+}
+
+.pc-menu {
+  display: none;
+  width: 100px;
+  margin: 12px auto 0;
+}
+
+.sp-menu {
+  width: 100px;
+  margin: 12px auto 0;
+}
+
+
+.common-menu {
+  background-color: yellowgreen;
+  margin: 0 auto;
+}
+
+
+
+
+
+header>nav>div {
+  width: 300px;
+}
+
+
+/* ナビの設定 */
+
+#mokuji {
+  background-color: yellow;
+  width: 400px;
+  order: -1;
+  border-radius: 20px;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0 0 0 / 0.8);
+    background: lightcyan;
+    font-size: large;
+    font-weight: bold;
+  }
+}
+
+
+
+
+/* bodyの設定 */
+body {
+  background-color: pink;
+}
+
+/* Main　の設定 */
+
+main {
+  background-color: lightgreen;
+  font-size: 14px;
+  flex: 1;
+}
+
+/* 消えていく「柱の会」制作 */
+
+.message {
+  width: 300px;
+  background: silver;
+  color: blueviolet;
+  font-size: large;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  position: fixed;
+  right: 100px;
+  bottom: 32px;
+  animation: popup 10s forwards;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  20% {
+    transform: none;
+    opacity: 1;
+  }
+
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+}
+
+
+
+
+
+/* footerの設定 */
+
+footer {
+  background-color: silver;
+  text-align: center;
+}
+
+/* メディアクエリ－の設定 */
+/* width =<600　の設定 */
+@media (min-width: 600px) {
+  .sp-menu {
+    display: none;
+  }
+
+  .common-menu {
+    display: block;
+    width: 600px;
+  }
+
+  .pc-menu {
+    display: block;
+    width: 100px;
+    background-color: green;
+  }
+
+  .common-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    display: flex;
+  }
+}
+
+
+/* ボタンの設定 */
+
+#moku {
+  background-color: rgb(0, 225, 255);
+  border-radius: 8px;
+  font-size: large;
+  position: fixed;
+  right: 32px;
+  bottom: 96px;
+  box-shadow: 0 4px #7a0000;
+}
+
+#top {
+  background-color: rgb(0, 225, 255);
+  border-radius: 8px;
+  font-size: large;
+  position: fixed;
+  right: 95px;
+  bottom: 96px;
+  box-shadow: 0 4px #7a0000;
+}
+
+
+
+
+
+
+
+
+
+/* button:hover {
+ opacity: .8;
+} */
+
+button:active {
+  box-shadow: 0 1px #7a0000;
+  transform: translateY(3px);
+}
